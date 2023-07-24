@@ -348,15 +348,14 @@ void drawMatrix()
 
 void main()
 {
-    printf("WELCOME TO TIC TAC TOE, YOU ARE PLAYING AGAINST A VIRTUAL AI ENABLED AGENT 'BATMAN'\n\n");
-    printf("BATMAN DARES YOU TO WIN !\n\n");
+    printf("Welcome to TIC TAC TOE, You are playing against 'Mustansir'\n\n");
     drawMatrix();
     while(!isWinningAI() || !isWinningAI() || !isDraw)
     {
         matrix_drawing_flag = 1;
         while(person_chance != 1)
         {
-            printf("PERSON.... pleaee enter the position where you want to place X: - ");
+            printf("Please enter the position where you want to place X: - ");
             scanf("%d", &position);
             chancePerson();
         }
@@ -365,21 +364,21 @@ void main()
 
         if(isWinningAI())
         {
-            printf("THE AI HAS WON !!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            printf("The computer has won!\n");
             break;
         }
         if(isWinningPerson())
         {
-            printf("THE PERSON HAS WON !!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            printf("The player has won!\n");
             break;
         }
         if(isDraw())
         {
-            printf("THE MATCH IS DRAW !!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            printf("The match is draw!\n");
             break;
         }
 
-        printf("Now its chance for the AI\n");
+        printf("Now its chance for the Computer\n");
 
         costMatrix();
         k=0;
@@ -388,17 +387,17 @@ void main()
 
         if(isWinningAI())
         {
-            printf("THE AI HAS WON !!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            printf("The computer has won!\n");
             break;
         }
         if(isWinningPerson())
         {
-            printf("THE PERSON HAS WON !!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            printf("The player has won!\n");
             break;
         }
         if(isDraw())
         {
-            printf("THE MATCH IS DRAW !!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            printf("The match is draw!\n");
             break;
         }
 

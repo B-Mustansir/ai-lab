@@ -66,7 +66,7 @@ void computerMove(int board[9]) {
     for (int i = 0; i < 9; ++i) {
         if (board[i] == 0) {
             board[i] = 1;
-            int tempScore = -minimax(board, -1, 1); // 2-ply search depth.
+            int tempScore = -minimax(board, -1, 1);
             board[i] = 0;
 
             if (tempScore > score) {
